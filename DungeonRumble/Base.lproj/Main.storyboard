@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AuthenticationVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AuthenticationVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL6-F3-elc" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-Hq-2gh">
+                                        <rect key="frame" x="275" y="53" width="250" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="1Ag-t0-HVr"/>
+                                            <constraint firstAttribute="height" constant="80" id="lHd-Dd-51W"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="26c-Hl-I1N" kind="show" animates="NO" id="KLo-36-hpb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s98-Lp-6XA">
+                                        <rect key="frame" x="295.33333333333331" y="153" width="209.66666666666669" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="forgot password?">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="system" size="25"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="opf-nN-DFw" kind="show" animates="NO" id="6bL-V6-YAQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-H4-6fQ">
+                                        <rect key="frame" x="275" y="217" width="250" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jhj-LZ-yWJ"/>
+                                            <constraint firstAttribute="width" constant="250" id="ywT-As-IRW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign-up" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="opf-nN-DFw" kind="show" animates="NO" id="PGZ-As-mHK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="Odm-H4-6fQ" firstAttribute="centerX" secondItem="iL6-F3-elc" secondAttribute="centerX" id="APg-od-4Tc"/>
+                                    <constraint firstItem="Odm-H4-6fQ" firstAttribute="top" secondItem="s98-Lp-6XA" secondAttribute="bottom" constant="20" id="CcS-Xw-3Wc"/>
+                                    <constraint firstItem="s98-Lp-6XA" firstAttribute="centerY" secondItem="iL6-F3-elc" secondAttribute="centerY" id="IUN-ZP-WNo"/>
+                                    <constraint firstItem="s98-Lp-6XA" firstAttribute="top" secondItem="mO2-Hq-2gh" secondAttribute="bottom" constant="20" id="RZq-WZ-hz9"/>
+                                    <constraint firstItem="s98-Lp-6XA" firstAttribute="centerX" secondItem="iL6-F3-elc" secondAttribute="centerX" id="ZdD-qg-ODd"/>
+                                    <constraint firstAttribute="width" constant="800" id="c4o-FI-SOr"/>
+                                    <constraint firstItem="mO2-Hq-2gh" firstAttribute="centerX" secondItem="iL6-F3-elc" secondAttribute="centerX" id="fol-0T-ULs"/>
+                                    <constraint firstAttribute="height" constant="350" id="ugj-Z6-jz8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="iL6-F3-elc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eeq-mm-GvL"/>
+                            <constraint firstItem="iL6-F3-elc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vPo-YU-ZdE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nbt-8y-euN"/>
+                    <connections>
+                        <outlet property="forgotPasswordButton" destination="s98-Lp-6XA" id="l5O-Ue-QGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482.5053995680346" y="79.906542056074755"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="WGf-pt-fha">
+            <objects>
+                <viewController id="26c-Hl-I1N" customClass="LoginVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9A-7t-t2O">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-Me-4nl" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhy-8V-SSB">
+                                        <rect key="frame" x="15" y="15" width="165" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="XYg-ez-KWg"/>
+                                            <constraint firstAttribute="height" constant="50" id="iSy-b7-tGz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go Back" imagePadding="7">
+                                            <imageReference key="image" image="arrow.left.circle.fill" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color name="Blue"/>
+                                                    <color name="Pink"/>
+                                                    <color name="Pink"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="default" weight="bold"/>
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="23"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="mF4-gr-XE5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z3-NA-LoC">
+                                        <rect key="frame" x="275" y="207.33333333333334" width="250" height="80.000000000000028"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="DCg-T7-MYk"/>
+                                            <constraint firstAttribute="height" constant="80" id="EFw-2w-uWT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" animates="NO" id="6Ss-EU-rjQ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0EU-NG-ZMV">
+                                        <rect key="frame" x="250" y="79.333333333333329" width="300" height="49.999999999999986"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Vhq-Bc-ykB"/>
+                                            <constraint firstAttribute="height" constant="50" id="v98-U9-70O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter email and password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frp-jn-fih">
+                                        <rect key="frame" x="219.66666666666666" y="26" width="360.66666666666674" height="28.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkz-nR-UYn">
+                                        <rect key="frame" x="361.33333333333331" y="302.33333333333331" width="77.333333333333314" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="Pink"/>
+                                        <size key="shadowOffset" width="2" height="-1"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-9q-5SM">
+                                        <rect key="frame" x="250" y="137.33333333333334" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SfP-gP-Y4g"/>
+                                            <constraint firstAttribute="width" constant="300" id="fbr-pQ-fbt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="Pkz-nR-UYn" firstAttribute="top" secondItem="9z3-NA-LoC" secondAttribute="bottom" constant="15" id="0ch-4Q-uIl"/>
+                                    <constraint firstItem="9z3-NA-LoC" firstAttribute="top" secondItem="xKj-9q-5SM" secondAttribute="bottom" constant="20" id="4Uf-fD-Bou"/>
+                                    <constraint firstItem="xKj-9q-5SM" firstAttribute="centerX" secondItem="6bG-Me-4nl" secondAttribute="centerX" id="6TX-V7-34R"/>
+                                    <constraint firstItem="9z3-NA-LoC" firstAttribute="centerX" secondItem="6bG-Me-4nl" secondAttribute="centerX" id="9Ha-ER-Flt"/>
+                                    <constraint firstItem="0EU-NG-ZMV" firstAttribute="centerX" secondItem="6bG-Me-4nl" secondAttribute="centerX" id="BEl-yU-kRT"/>
+                                    <constraint firstAttribute="width" constant="800" id="DB6-XR-LbY"/>
+                                    <constraint firstAttribute="height" constant="350" id="Hwb-ae-L8t"/>
+                                    <constraint firstItem="Pkz-nR-UYn" firstAttribute="centerX" secondItem="6bG-Me-4nl" secondAttribute="centerX" id="RP6-0T-vp1"/>
+                                    <constraint firstItem="Yhy-8V-SSB" firstAttribute="top" secondItem="6bG-Me-4nl" secondAttribute="top" constant="15" id="SL2-gf-45U"/>
+                                    <constraint firstItem="Frp-jn-fih" firstAttribute="centerY" secondItem="Yhy-8V-SSB" secondAttribute="centerY" id="dCU-Aq-lhT"/>
+                                    <constraint firstItem="0EU-NG-ZMV" firstAttribute="top" secondItem="Frp-jn-fih" secondAttribute="bottom" constant="25" id="ikj-5x-oY8"/>
+                                    <constraint firstItem="Yhy-8V-SSB" firstAttribute="leading" secondItem="6bG-Me-4nl" secondAttribute="leading" constant="15" id="kIz-h6-tK7"/>
+                                    <constraint firstItem="Frp-jn-fih" firstAttribute="centerX" secondItem="6bG-Me-4nl" secondAttribute="centerX" id="rND-cN-Jgx"/>
+                                    <constraint firstItem="xKj-9q-5SM" firstAttribute="top" secondItem="0EU-NG-ZMV" secondAttribute="bottom" constant="8" symbolic="YES" id="z0h-fh-9ZC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4c2-uS-7kf"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="6bG-Me-4nl" firstAttribute="centerY" secondItem="W9A-7t-t2O" secondAttribute="centerY" id="7Sm-4E-hIq"/>
+                            <constraint firstItem="6bG-Me-4nl" firstAttribute="centerX" secondItem="W9A-7t-t2O" secondAttribute="centerX" id="lGg-nf-cBG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wT9-Xs-Co0"/>
+                    <connections>
+                        <outlet property="emailInput" destination="0EU-NG-ZMV" id="KZo-uh-ghu"/>
+                        <outlet property="errorMessage" destination="Pkz-nR-UYn" id="MA9-5Y-UOU"/>
+                        <outlet property="passwordInput" destination="xKj-9q-5SM" id="sz4-iF-7qj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCj-AS-q0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149.2440604751623" y="-461.21495327102804"/>
+        </scene>
+        <!--Signup Change PasswordVC-->
+        <scene sceneID="4yC-CT-Ni4">
+            <objects>
+                <viewController id="opf-nN-DFw" customClass="SignupChangePasswordVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dyG-HB-muP">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gv4-5w-37Q" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-zo-ItK">
+                                        <rect key="frame" x="15" y="15" width="165" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bhd-4J-3CB"/>
+                                            <constraint firstAttribute="width" constant="165" id="NwW-IY-o9E"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go Back" imagePadding="7">
+                                            <imageReference key="image" image="arrow.left.circle.fill" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color name="Blue"/>
+                                                    <color name="Pink"/>
+                                                    <color name="Pink"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="31" scale="default" weight="bold"/>
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="23"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="oLl-ap-OAG"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-Q6-L8B">
+                                        <rect key="frame" x="60" y="96.333333333333343" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="McQ-JV-PGd"/>
+                                            <constraint firstAttribute="height" constant="50" id="oZM-EG-EWI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eU0-JW-Ihd">
+                                        <rect key="frame" x="60" y="154.33333333333334" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CBf-le-W70"/>
+                                            <constraint firstAttribute="width" constant="300" id="Xe5-kN-tIE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gP-wK-4W9">
+                                        <rect key="frame" x="60" y="212.33333333333334" width="300" height="50.000000000000028"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="8sb-54-fy2"/>
+                                            <constraint firstAttribute="height" constant="50" id="E73-Wz-7ix"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeT-dq-od3">
+                                        <rect key="frame" x="60" y="270.33333333333331" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="KYN-xC-fDM"/>
+                                            <constraint firstAttribute="height" constant="50" id="rbJ-CB-MIo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter new account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-am-hSt">
+                                        <rect key="frame" x="272.33333333333331" y="26" width="255.33333333333331" height="28.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(or old account with new password)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrw-mq-jnx">
+                                        <rect key="frame" x="145" y="62" width="510.33333333333326" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-ul-68T">
+                                        <rect key="frame" x="430" y="199.33333333333334" width="350" height="80.000000000000028"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jqo-qZ-saN"/>
+                                            <constraint firstAttribute="width" constant="350" id="qxw-dO-d4f"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Change Password" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="32"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" animates="NO" id="W9F-H3-Lor"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyc-Sw-BfN">
+                                        <rect key="frame" x="480" y="111.33333333333334" width="250" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="O3g-33-8uG"/>
+                                            <constraint firstAttribute="width" constant="250" id="S9Y-5e-su4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign-up" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" animates="NO" id="1Nk-uc-wIr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL7-rg-4Di">
+                                        <rect key="frame" x="566.33333333333337" y="294.33333333333331" width="77.333333333333371" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="Pink"/>
+                                        <size key="shadowOffset" width="2" height="-1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="Lrw-mq-jnx" firstAttribute="firstBaseline" secondItem="vBX-am-hSt" secondAttribute="baseline" constant="32" symbolType="layoutAnchor" id="0H9-Nv-gQQ"/>
+                                    <constraint firstItem="AK1-ul-68T" firstAttribute="centerX" secondItem="KL7-rg-4Di" secondAttribute="centerX" id="253-gQ-AEm"/>
+                                    <constraint firstItem="Lrw-mq-jnx" firstAttribute="centerX" secondItem="gv4-5w-37Q" secondAttribute="centerX" id="2Ca-pj-yP8"/>
+                                    <constraint firstAttribute="width" constant="800" id="3mn-Uw-zMB"/>
+                                    <constraint firstItem="1gP-wK-4W9" firstAttribute="centerX" secondItem="gZZ-Q6-L8B" secondAttribute="centerX" id="6u8-u6-ObH"/>
+                                    <constraint firstItem="cnf-zo-ItK" firstAttribute="leading" secondItem="gv4-5w-37Q" secondAttribute="leading" constant="15" id="Aik-E4-dwh"/>
+                                    <constraint firstItem="eU0-JW-Ihd" firstAttribute="top" secondItem="gZZ-Q6-L8B" secondAttribute="bottom" constant="8" symbolic="YES" id="Gob-dx-co0"/>
+                                    <constraint firstItem="vBX-am-hSt" firstAttribute="centerY" secondItem="cnf-zo-ItK" secondAttribute="centerY" id="KrI-2L-hJ6"/>
+                                    <constraint firstItem="KL7-rg-4Di" firstAttribute="top" secondItem="AK1-ul-68T" secondAttribute="bottom" constant="15" id="Mb4-pc-EyH"/>
+                                    <constraint firstItem="yeT-dq-od3" firstAttribute="top" secondItem="1gP-wK-4W9" secondAttribute="bottom" constant="8" symbolic="YES" id="OlW-Xb-dkx"/>
+                                    <constraint firstItem="eU0-JW-Ihd" firstAttribute="centerX" secondItem="gZZ-Q6-L8B" secondAttribute="centerX" id="Pc5-st-JuB"/>
+                                    <constraint firstItem="Dyc-Sw-BfN" firstAttribute="top" secondItem="Lrw-mq-jnx" secondAttribute="bottom" constant="25" id="RXJ-EO-YLe"/>
+                                    <constraint firstAttribute="trailing" secondItem="AK1-ul-68T" secondAttribute="trailing" constant="20" symbolic="YES" id="SJG-8i-Yc0"/>
+                                    <constraint firstItem="1gP-wK-4W9" firstAttribute="top" secondItem="eU0-JW-Ihd" secondAttribute="bottom" constant="8" symbolic="YES" id="UWZ-Q5-B8B"/>
+                                    <constraint firstItem="gZZ-Q6-L8B" firstAttribute="leading" secondItem="gv4-5w-37Q" secondAttribute="leading" constant="60" id="Vbn-u1-CVq"/>
+                                    <constraint firstItem="Dyc-Sw-BfN" firstAttribute="centerX" secondItem="AK1-ul-68T" secondAttribute="centerX" id="WNc-kw-Xb3"/>
+                                    <constraint firstItem="gZZ-Q6-L8B" firstAttribute="top" secondItem="Lrw-mq-jnx" secondAttribute="bottom" constant="10" id="aN2-b2-ocW"/>
+                                    <constraint firstItem="AK1-ul-68T" firstAttribute="top" secondItem="Dyc-Sw-BfN" secondAttribute="bottom" constant="8" symbolic="YES" id="biq-5p-ibM"/>
+                                    <constraint firstItem="cnf-zo-ItK" firstAttribute="top" secondItem="gv4-5w-37Q" secondAttribute="top" constant="15" id="gMO-8F-8nM"/>
+                                    <constraint firstItem="yeT-dq-od3" firstAttribute="centerX" secondItem="gZZ-Q6-L8B" secondAttribute="centerX" id="tUG-xU-6dz"/>
+                                    <constraint firstItem="vBX-am-hSt" firstAttribute="centerX" secondItem="gv4-5w-37Q" secondAttribute="centerX" id="xaX-7x-uXt"/>
+                                    <constraint firstAttribute="height" constant="350" id="ztv-G4-W7d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Vr-nm-T9R"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="gv4-5w-37Q" firstAttribute="centerY" secondItem="dyG-HB-muP" secondAttribute="centerY" id="JMr-tC-J7Z"/>
+                            <constraint firstItem="gv4-5w-37Q" firstAttribute="centerX" secondItem="dyG-HB-muP" secondAttribute="centerX" id="jhz-Bh-xiy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8GY-B7-nwn"/>
+                    <connections>
+                        <outlet property="emailInput" destination="eU0-JW-Ihd" id="m07-ut-S5p"/>
+                        <outlet property="errorMessage" destination="KL7-rg-4Di" id="7w0-Q3-kD0"/>
+                        <outlet property="passwordInput" destination="1gP-wK-4W9" id="A5I-TF-Ppa"/>
+                        <outlet property="reenteredPasswordInput" destination="yeT-dq-od3" id="0h1-J3-xJg"/>
+                        <outlet property="usernameInput" destination="gZZ-Q6-L8B" id="nkH-fX-WBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lad-he-3IP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149.2440604751623" y="642.0560747663551"/>
+        </scene>
+        <!--Play GameVC-->
+        <scene sceneID="t8k-5C-XYt">
+            <objects>
+                <viewController id="hqA-gN-k83" customClass="PlayGameVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJQ-Pw-XAL">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsS-dy-cNX" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94q-4X-2HS">
+                                        <rect key="frame" x="15" y="15" width="173" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mQe-g0-N9B"/>
+                                            <constraint firstAttribute="width" constant="173" id="rgI-yd-27N"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log Out" imagePadding="7">
+                                            <imageReference key="image" image="arrow.up.left.circle.fill" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color name="Blue"/>
+                                                    <color name="Pink"/>
+                                                    <color name="Pink"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="23"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Hpz-fK-uXT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD9-VO-rQv">
+                                        <rect key="frame" x="250" y="162" width="300" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="5H5-9h-Mom"/>
+                                            <constraint firstAttribute="width" constant="300" id="Qg7-Mg-gze"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Play Game" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="zGq-rf-xch" kind="show" id="Zyz-v7-VY4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYh-g8-0cP">
+                                        <rect key="frame" x="275" y="250" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a6x-OS-1OZ"/>
+                                            <constraint firstAttribute="width" constant="250" id="b2n-mq-KL3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Try Tutorial" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qss-sx-PcP">
+                                        <rect key="frame" x="730" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="blR-ac-VtJ"/>
+                                            <constraint firstAttribute="height" constant="40" id="ejn-Vv-kYe"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="gearshape.2.fill" catalog="system" symbolScale="default"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="UKM-EK-nXE" kind="show" animates="NO" id="T7w-qn-l2s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcM-fW-b0E">
+                                        <rect key="frame" x="730" y="80" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="B7T-AH-3AX"/>
+                                            <constraint firstAttribute="height" constant="40" id="oDe-4G-y1d"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="crown.fill" catalog="system" symbolScale="default"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="TBi-pD-TdC" kind="show" animates="NO" id="0ca-BB-qeQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Highest Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsh-Uo-JHl">
+                                        <rect key="frame" x="302.33333333333331" y="60.000000000000007" width="195.33333333333331" height="28.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-GS-uDs">
+                                        <rect key="frame" x="302.33333333333331" y="96.333333333333343" width="195.33333333333331" height="30.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="2DK-gl-lOe"/>
+                                    <constraint firstItem="qss-sx-PcP" firstAttribute="top" secondItem="hsS-dy-cNX" secondAttribute="top" constant="20" id="3AO-Uq-Cvg"/>
+                                    <constraint firstItem="Icc-GS-uDs" firstAttribute="top" secondItem="Bsh-Uo-JHl" secondAttribute="bottom" constant="8" symbolic="YES" id="3sw-R4-s3A"/>
+                                    <constraint firstItem="Bsh-Uo-JHl" firstAttribute="top" secondItem="hsS-dy-cNX" secondAttribute="top" constant="60" id="4In-ts-rMb"/>
+                                    <constraint firstAttribute="trailing" secondItem="qss-sx-PcP" secondAttribute="trailing" constant="30" id="5tv-Nc-I8Z"/>
+                                    <constraint firstItem="hcM-fW-b0E" firstAttribute="centerX" secondItem="qss-sx-PcP" secondAttribute="centerX" id="B9d-cx-ctD"/>
+                                    <constraint firstItem="YD9-VO-rQv" firstAttribute="top" secondItem="Icc-GS-uDs" secondAttribute="bottom" constant="35" id="F3b-YV-zpr"/>
+                                    <constraint firstItem="Bsh-Uo-JHl" firstAttribute="centerX" secondItem="hsS-dy-cNX" secondAttribute="centerX" id="PfC-LF-dLC"/>
+                                    <constraint firstItem="pYh-g8-0cP" firstAttribute="top" secondItem="YD9-VO-rQv" secondAttribute="bottom" constant="8" symbolic="YES" id="Qnh-9q-OaX"/>
+                                    <constraint firstItem="pYh-g8-0cP" firstAttribute="centerX" secondItem="hsS-dy-cNX" secondAttribute="centerX" id="Uor-pN-bzS"/>
+                                    <constraint firstAttribute="width" constant="800" id="aWi-pc-Hvf"/>
+                                    <constraint firstItem="hcM-fW-b0E" firstAttribute="top" secondItem="qss-sx-PcP" secondAttribute="bottom" constant="20" id="bIS-kA-bKY"/>
+                                    <constraint firstAttribute="bottom" secondItem="pYh-g8-0cP" secondAttribute="bottom" constant="50" id="ezP-vF-7lU"/>
+                                    <constraint firstItem="94q-4X-2HS" firstAttribute="top" secondItem="hsS-dy-cNX" secondAttribute="top" constant="15" id="f63-0q-0u9"/>
+                                    <constraint firstItem="94q-4X-2HS" firstAttribute="leading" secondItem="hsS-dy-cNX" secondAttribute="leading" constant="15" id="ocy-1D-IOA"/>
+                                    <constraint firstItem="YD9-VO-rQv" firstAttribute="centerX" secondItem="hsS-dy-cNX" secondAttribute="centerX" id="osB-5y-Nct"/>
+                                    <constraint firstItem="Icc-GS-uDs" firstAttribute="centerX" secondItem="hsS-dy-cNX" secondAttribute="centerX" id="rNU-Gv-fOL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BSA-9e-mJH"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="hsS-dy-cNX" firstAttribute="centerY" secondItem="jJQ-Pw-XAL" secondAttribute="centerY" id="fVB-i4-4Dn"/>
+                            <constraint firstItem="hsS-dy-cNX" firstAttribute="centerX" secondItem="jJQ-Pw-XAL" secondAttribute="centerX" id="kaw-4Y-8TV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="44u-6T-9fB"/>
+                    <connections>
+                        <outlet property="currentScore" destination="Icc-GS-uDs" id="7rI-mW-PD0"/>
+                        <outlet property="highestScore" destination="Bsh-Uo-JHl" id="nKN-zA-mEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wir-Ei-jsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871.7062634989202" y="79.906542056074755"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="WGr-sn-8se">
+            <objects>
+                <viewController id="zGq-rf-xch" customClass="GameVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LjL-LC-2HF">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gND-Nm-JtA">
+                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="tBw-vD-hQ9"/>
+                                    <constraint firstAttribute="width" constant="926" id="xdF-Hu-z0b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sky-sj-nWy">
+                                <rect key="frame" x="710" y="216" width="47" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.up.square.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <color key="baseForegroundColor" name="Pink"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="movementButton:" destination="zGq-rf-xch" eventType="touchUpInside" id="zKA-in-Sqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVn-of-JMs">
+                                <rect key="frame" x="631" y="272" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <color key="baseForegroundColor" name="Pink"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="movementButton:" destination="zGq-rf-xch" eventType="touchUpInside" id="Zsv-in-ffg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-br-wTK">
+                                <rect key="frame" x="699" y="323" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.down.square.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <color key="baseForegroundColor" name="Pink"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="movementButton:" destination="zGq-rf-xch" eventType="touchUpInside" id="NdF-Rs-Zlg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-7O-CSR">
+                                <rect key="frame" x="99" y="253" width="92" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Attack" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="18"/>
+                                    <color key="baseBackgroundColor" name="Pink"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="activateAttack:" destination="zGq-rf-xch" eventType="touchUpInside" id="584-Tw-VBP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lez-Dn-Eeo">
+                                <rect key="frame" x="774" y="272" width="64" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.square.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <color key="baseForegroundColor" name="Pink"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="movementButton:" destination="zGq-rf-xch" eventType="touchUpInside" id="pHu-sZ-geI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hgN-XQ-i5d"/>
+                        <color key="backgroundColor" name="Dark Blue"/>
+                        <constraints>
+                            <constraint firstItem="gND-Nm-JtA" firstAttribute="centerX" secondItem="LjL-LC-2HF" secondAttribute="centerX" id="PlW-ZL-wmt"/>
+                            <constraint firstItem="gND-Nm-JtA" firstAttribute="centerY" secondItem="LjL-LC-2HF" secondAttribute="centerY" id="UuL-gd-QDe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AwI-Ks-edO"/>
+                    <connections>
+                        <outlet property="display" destination="gND-Nm-JtA" id="fqd-Lh-tyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kT-vo-0RW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2863.9308855291579" y="1066.8224299065421"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="PsI-EE-hXo">
+            <objects>
+                <viewController id="UKM-EK-nXE" customClass="SettingsVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9iO-AM-WPv">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgE-lW-h0S" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jg-pa-OX0">
+                                        <rect key="frame" x="15" y="15" width="165" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3zw-kA-cRl"/>
+                                            <constraint firstAttribute="width" constant="165" id="bvY-bU-LPL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go Back" imagePadding="7">
+                                            <imageReference key="image" image="arrow.left.circle.fill" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color name="Blue"/>
+                                                    <color name="Pink"/>
+                                                    <color name="Pink"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="default" weight="bold"/>
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="23"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" id="VvD-ek-JJ9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-gV-0Nh">
+                                        <rect key="frame" x="340" y="26" width="120.33333333333331" height="28.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="turn off/on music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-J9-dTX">
+                                        <rect key="frame" x="225.66666666666669" y="104.33333333333334" width="255.33333333333331" height="28.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 💀 hard mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17c-QT-Cab">
+                                        <rect key="frame" x="289.66666666666669" y="162.66666666666666" width="191.33333333333331" height="28.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Mh-83-cO3">
+                                        <rect key="frame" x="521" y="103" width="51" height="31"/>
+                                        <color key="onTintColor" name="Pink"/>
+                                        <connections>
+                                            <action selector="musicSwitchChanged:" destination="UKM-EK-nXE" eventType="valueChanged" id="cjK-XO-9ly"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-2L-dn5">
+                                        <rect key="frame" x="521" y="161.33333333333334" width="51" height="31"/>
+                                        <color key="onTintColor" name="Pink"/>
+                                        <connections>
+                                            <action selector="difficultySwitchChanged:" destination="UKM-EK-nXE" eventType="valueChanged" id="Z1q-eS-P1r"/>
+                                        </connections>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg1-C2-QvF">
+                                        <rect key="frame" x="275" y="231" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="e6t-e0-ZqY"/>
+                                            <constraint firstAttribute="height" constant="50" id="uTd-o0-FOB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete Account" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteAccountButtonPressed:" destination="UKM-EK-nXE" eventType="touchUpInside" id="QHe-aw-4hy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="8Jg-pa-OX0" firstAttribute="top" secondItem="HgE-lW-h0S" secondAttribute="top" constant="15" id="0nh-Fl-odx"/>
+                                    <constraint firstItem="8Jg-pa-OX0" firstAttribute="leading" secondItem="HgE-lW-h0S" secondAttribute="leading" constant="15" id="Ddx-Jz-F1l"/>
+                                    <constraint firstItem="17c-QT-Cab" firstAttribute="trailing" secondItem="9eq-J9-dTX" secondAttribute="trailing" id="EOG-Mx-VWA"/>
+                                    <constraint firstItem="17c-QT-Cab" firstAttribute="top" secondItem="9eq-J9-dTX" secondAttribute="bottom" constant="30" id="ESJ-wc-awe"/>
+                                    <constraint firstItem="9eq-J9-dTX" firstAttribute="top" secondItem="7cL-gV-0Nh" secondAttribute="bottom" constant="50" id="Eiu-O8-7ar"/>
+                                    <constraint firstItem="7cL-gV-0Nh" firstAttribute="centerX" secondItem="HgE-lW-h0S" secondAttribute="centerX" id="HEP-To-Rew"/>
+                                    <constraint firstItem="8Mh-83-cO3" firstAttribute="leading" secondItem="9eq-J9-dTX" secondAttribute="trailing" constant="40" id="JWk-oh-KkC"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Mh-83-cO3" secondAttribute="trailing" constant="230" id="Pfq-Hw-J77"/>
+                                    <constraint firstItem="7cL-gV-0Nh" firstAttribute="centerY" secondItem="8Jg-pa-OX0" secondAttribute="centerY" id="SgW-JN-gLo"/>
+                                    <constraint firstItem="yg1-C2-QvF" firstAttribute="top" secondItem="17c-QT-Cab" secondAttribute="bottom" constant="40" id="TqR-he-Jxb"/>
+                                    <constraint firstItem="BrB-2L-dn5" firstAttribute="leading" secondItem="17c-QT-Cab" secondAttribute="trailing" constant="40" id="XBX-Mm-rcW"/>
+                                    <constraint firstAttribute="height" constant="350" id="k3K-53-JEw"/>
+                                    <constraint firstItem="yg1-C2-QvF" firstAttribute="centerX" secondItem="HgE-lW-h0S" secondAttribute="centerX" id="pe6-JD-ggg"/>
+                                    <constraint firstItem="17c-QT-Cab" firstAttribute="centerY" secondItem="BrB-2L-dn5" secondAttribute="centerY" id="r5J-Tb-TDz"/>
+                                    <constraint firstAttribute="width" constant="800" id="wIZ-ui-vq5"/>
+                                    <constraint firstItem="9eq-J9-dTX" firstAttribute="centerY" secondItem="8Mh-83-cO3" secondAttribute="centerY" id="yd1-CZ-zU3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ft-TH-C11"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="HgE-lW-h0S" firstAttribute="centerY" secondItem="9iO-AM-WPv" secondAttribute="centerY" id="Opd-hI-GjL"/>
+                            <constraint firstItem="HgE-lW-h0S" firstAttribute="centerX" secondItem="9iO-AM-WPv" secondAttribute="centerX" id="z8y-HT-HHs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u4d-Sv-5RY"/>
+                    <connections>
+                        <outlet property="difficultySwitch" destination="BrB-2L-dn5" id="uh3-4F-Ca5"/>
+                        <outlet property="musicSettingLabel" destination="9eq-J9-dTX" id="H8z-eQ-Ueb"/>
+                        <outlet property="musicSwitch" destination="8Mh-83-cO3" id="Bvw-gn-hos"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyq-t9-0ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3590.9287257019441" y="-461.21495327102804"/>
+        </scene>
+        <!--LeaderboardVC-->
+        <scene sceneID="Bry-lx-fp2">
+            <objects>
+                <viewController id="TBi-pD-TdC" customClass="LeaderboardVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wQB-yI-rWu">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afV-pH-4XE" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiP-Ow-eYV">
+                                        <rect key="frame" x="15" y="15" width="165" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="FSD-ne-eJ1"/>
+                                            <constraint firstAttribute="height" constant="50" id="yrG-YH-tsh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go Back" imagePadding="7">
+                                            <imageReference key="image" image="arrow.left.circle.fill" catalog="system" renderingMode="hierarchical">
+                                                <hierarchicalColors>
+                                                    <color name="Blue"/>
+                                                    <color name="Pink"/>
+                                                    <color name="Pink"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="default" weight="bold"/>
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="23"/>
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" id="yHb-OS-cNq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="highest scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gap-IE-gmS">
+                                        <rect key="frame" x="294.66666666666669" y="25.666666666666671" width="211" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-w3-beP">
+                                        <rect key="frame" x="198.66666666666669" y="59.666666666666671" width="61" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="Pink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEA-MM-kQF">
+                                        <rect key="frame" x="339.66666666666669" y="59.666666666666671" width="121" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="Pink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1       davey       99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edq-nc-67b">
+                                        <rect key="frame" x="212" y="113.66666666666666" width="376" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2       sarah4      199" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81l-jr-72N">
+                                        <rect key="frame" x="212" y="146.33333333333334" width="376" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3       asfjasof    50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyv-L3-TKs">
+                                        <rect key="frame" x="212" y="179" width="376" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4       davey       49" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbK-CU-5GW">
+                                        <rect key="frame" x="212" y="211.66666666666666" width="376" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5        bob        30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-pX-Mso">
+                                        <rect key="frame" x="212" y="244.33333333333331" width="376" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym3-By-rxb">
+                                        <rect key="frame" x="522" y="58" width="76" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="Pink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="jbK-CU-5GW" firstAttribute="firstBaseline" secondItem="tyv-L3-TKs" secondAttribute="baseline" constant="32" symbolType="layoutAnchor" id="34D-Ic-VZO"/>
+                                    <constraint firstItem="BiP-Ow-eYV" firstAttribute="top" secondItem="afV-pH-4XE" secondAttribute="top" constant="15" id="907-tA-Aau"/>
+                                    <constraint firstItem="tyv-L3-TKs" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="Bdf-L8-akI"/>
+                                    <constraint firstItem="gap-IE-gmS" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="CXf-Hg-2Rl"/>
+                                    <constraint firstItem="jbK-CU-5GW" firstAttribute="leading" secondItem="edq-nc-67b" secondAttribute="leading" id="HG1-NE-Ag2"/>
+                                    <constraint firstItem="BiP-Ow-eYV" firstAttribute="leading" secondItem="afV-pH-4XE" secondAttribute="leading" constant="15" id="KVU-oo-eQa"/>
+                                    <constraint firstItem="ym3-By-rxb" firstAttribute="leading" secondItem="EEA-MM-kQF" secondAttribute="trailing" constant="70" id="NMH-RU-pbC"/>
+                                    <constraint firstItem="jbK-CU-5GW" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="NlM-yz-mpO"/>
+                                    <constraint firstItem="yfq-pX-Mso" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="Qsr-zd-PVQ"/>
+                                    <constraint firstItem="81l-jr-72N" firstAttribute="leading" secondItem="edq-nc-67b" secondAttribute="leading" id="TLi-N1-zDa"/>
+                                    <constraint firstItem="81l-jr-72N" firstAttribute="firstBaseline" secondItem="edq-nc-67b" secondAttribute="baseline" constant="32" symbolType="layoutAnchor" id="UtQ-ME-WCE"/>
+                                    <constraint firstAttribute="width" constant="800" id="V7D-s9-B1F"/>
+                                    <constraint firstItem="tyv-L3-TKs" firstAttribute="leading" secondItem="edq-nc-67b" secondAttribute="leading" id="WrE-dB-iNe"/>
+                                    <constraint firstItem="EEA-MM-kQF" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="YcT-b4-Qfa"/>
+                                    <constraint firstItem="tyv-L3-TKs" firstAttribute="firstBaseline" secondItem="81l-jr-72N" secondAttribute="baseline" constant="32" symbolType="layoutAnchor" id="ZSM-qf-1uZ"/>
+                                    <constraint firstItem="yfq-pX-Mso" firstAttribute="firstBaseline" secondItem="jbK-CU-5GW" secondAttribute="baseline" constant="32" symbolType="layoutAnchor" id="dEn-CR-IBC"/>
+                                    <constraint firstItem="gap-IE-gmS" firstAttribute="centerY" secondItem="BiP-Ow-eYV" secondAttribute="centerY" id="hAi-he-u9A"/>
+                                    <constraint firstItem="EEA-MM-kQF" firstAttribute="leading" secondItem="CnZ-w3-beP" secondAttribute="trailing" constant="80" id="hk9-kb-8Kf"/>
+                                    <constraint firstItem="CnZ-w3-beP" firstAttribute="centerY" secondItem="EEA-MM-kQF" secondAttribute="centerY" id="jVM-dc-zLO"/>
+                                    <constraint firstItem="yfq-pX-Mso" firstAttribute="leading" secondItem="edq-nc-67b" secondAttribute="leading" id="naP-wq-Skj"/>
+                                    <constraint firstItem="81l-jr-72N" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="phK-eH-EpU"/>
+                                    <constraint firstItem="edq-nc-67b" firstAttribute="top" secondItem="EEA-MM-kQF" secondAttribute="bottom" constant="25" id="qEB-p8-hzW"/>
+                                    <constraint firstItem="EEA-MM-kQF" firstAttribute="top" secondItem="gap-IE-gmS" secondAttribute="bottom" constant="5" id="ucL-vg-tqT"/>
+                                    <constraint firstAttribute="height" constant="350" id="xKC-Gk-3sd"/>
+                                    <constraint firstItem="edq-nc-67b" firstAttribute="centerX" secondItem="afV-pH-4XE" secondAttribute="centerX" id="yMi-o8-4bE"/>
+                                    <constraint firstItem="EEA-MM-kQF" firstAttribute="centerY" secondItem="ym3-By-rxb" secondAttribute="centerY" id="z2I-b5-8mk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DSc-Ma-gOx"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="afV-pH-4XE" firstAttribute="centerX" secondItem="wQB-yI-rWu" secondAttribute="centerX" id="9mM-eH-bsS"/>
+                            <constraint firstItem="afV-pH-4XE" firstAttribute="centerY" secondItem="wQB-yI-rWu" secondAttribute="centerY" id="DXF-Aj-fLF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Olu-ht-qi5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftO-fD-idl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3590.9287257019441" y="640.65420560747657"/>
+        </scene>
+        <!--DeathVC-->
+        <scene sceneID="YOO-pN-zGO">
+            <objects>
+                <viewController id="dQO-wF-hv3" customClass="DeathVC" customModule="DungeonRumble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uc1-ZV-fYg">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E96-Zt-RCV" customClass="BorderView" customModule="DungeonRumble" customModuleProvider="target">
+                                <rect key="frame" x="63" y="39" width="800" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU DIED!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zr5-I1-RtG">
+                                        <rect key="frame" x="222.33333333333334" y="80" width="355.33333333333326" height="74"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="65"/>
+                                        <color key="textColor" name="Pink"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="4" height="-1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-uO-7MX">
+                                        <rect key="frame" x="302" y="184" width="196" height="29"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-tJ-gEB">
+                                        <rect key="frame" x="275" y="260" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="4jk-hW-b6x"/>
+                                            <constraint firstAttribute="height" constant="50" id="PBp-WU-pgf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Try Again" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                            <color key="baseForegroundColor" name="Pink"/>
+                                            <color key="baseBackgroundColor" name="Dark Blue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hqA-gN-k83" kind="show" id="5tq-bE-6eo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HUY-tJ-gEB" secondAttribute="bottom" constant="40" id="2bh-EF-5D9"/>
+                                    <constraint firstItem="Zr5-I1-RtG" firstAttribute="top" secondItem="E96-Zt-RCV" secondAttribute="top" constant="80" id="6zF-3b-ip7"/>
+                                    <constraint firstAttribute="height" constant="350" id="O9z-1W-d74"/>
+                                    <constraint firstItem="pc2-uO-7MX" firstAttribute="top" secondItem="Zr5-I1-RtG" secondAttribute="bottom" constant="30" id="TAa-Ro-ktd"/>
+                                    <constraint firstItem="pc2-uO-7MX" firstAttribute="centerX" secondItem="E96-Zt-RCV" secondAttribute="centerX" id="Ufk-OV-Dbz"/>
+                                    <constraint firstAttribute="width" constant="800" id="YQZ-O3-gIs"/>
+                                    <constraint firstItem="Zr5-I1-RtG" firstAttribute="centerX" secondItem="E96-Zt-RCV" secondAttribute="centerX" id="ZS9-ym-T4J"/>
+                                    <constraint firstItem="HUY-tJ-gEB" firstAttribute="centerX" secondItem="E96-Zt-RCV" secondAttribute="centerX" id="obD-LU-Yaz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eza-Q5-hFK"/>
+                        <color key="backgroundColor" name="Blue"/>
+                        <constraints>
+                            <constraint firstItem="E96-Zt-RCV" firstAttribute="centerY" secondItem="uc1-ZV-fYg" secondAttribute="centerY" id="DsA-pT-h5C"/>
+                            <constraint firstItem="E96-Zt-RCV" firstAttribute="centerX" secondItem="uc1-ZV-fYg" secondAttribute="centerX" id="TgU-o3-V3F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deathMessage" destination="pc2-uO-7MX" id="8Mf-Op-WCN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ar9-8N-r8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3508.6393088552918" y="1669.6261682242989"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5tq-bE-6eo"/>
+        <segue reference="PGZ-As-mHK"/>
+        <segue reference="Hpz-fK-uXT"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrow.down.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.left.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.right.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.up.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.up.square.fill" catalog="system" width="128" height="114"/>
+        <image name="crown.fill" catalog="system" width="128" height="92"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <namedColor name="AccentColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="Blue">
+            <color red="0.058823529411764705" green="0.20392156862745098" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Blue">
+            <color red="0.086274509803921567" green="0.12941176470588237" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pink">
+            <color red="0.9137254901960784" green="0.27058823529411763" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

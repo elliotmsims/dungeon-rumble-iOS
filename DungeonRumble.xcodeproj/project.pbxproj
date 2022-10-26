@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E5202B228FDDF350028819D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5202B128FDDF350028819D /* Entity.swift */; };
+		0E5202B428FDEBEC0028819D /* GameWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5202B328FDEBEC0028819D /* GameWorld.swift */; };
+		0E9B249528F8992F0042DEA2 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B249428F8992F0042DEA2 /* GameVC.swift */; };
+		30C5D09C28FB068400C4E345 /* DeathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5D09B28FB068400C4E345 /* DeathVC.swift */; };
+		8B25468F28F66553002D8F6D /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25468E28F66553002D8F6D /* SettingsVC.swift */; };
+		8B25469128F666A3002D8F6D /* LeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25469028F666A3002D8F6D /* LeaderboardVC.swift */; };
+		8BA6D44C28F47CF60033E6DA /* PlayGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6D44B28F47CF60033E6DA /* PlayGameVC.swift */; };
+		8BA6D45028F5BCFB0033E6DA /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6D44F28F5BCFB0033E6DA /* BorderView.swift */; };
+		8BC2157528F1D7E100DE67FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2157428F1D7E100DE67FB /* AppDelegate.swift */; };
+		8BC2157728F1D7E100DE67FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2157628F1D7E100DE67FB /* SceneDelegate.swift */; };
+		8BC2157928F1D7E100DE67FB /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2157828F1D7E100DE67FB /* AuthenticationVC.swift */; };
+		8BC2157C28F1D7E100DE67FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2157A28F1D7E100DE67FB /* Main.storyboard */; };
+		8BC2157F28F1D7E100DE67FB /* DungeonRumble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2157D28F1D7E100DE67FB /* DungeonRumble.xcdatamodeld */; };
+		8BC2158128F1D7E300DE67FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2158028F1D7E300DE67FB /* Assets.xcassets */; };
+		8BC2158428F1D7E300DE67FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2158228F1D7E300DE67FB /* LaunchScreen.storyboard */; };
+		8BC215A028F1F78D00DE67FB /* purple-pixel-dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2159F28F1F78D00DE67FB /* purple-pixel-dragon.png */; };
+		8BC215A328F200EA00DE67FB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC215A228F200EA00DE67FB /* LoginVC.swift */; };
+		8BC215A528F2017F00DE67FB /* SignupChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC215A428F2017F00DE67FB /* SignupChangePasswordVC.swift */; };
+		920C3D5C28FF83670066FE75 /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 920C3D5B28FF83670066FE75 /* VT323-Regular.ttf */; };
+		9239632D28FE30CA001631C5 /* Birdsong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9239632C28FE30CA001631C5 /* Birdsong.mp3 */; };
+		9239632F28FE32AC001631C5 /* OtherSideOfTheMoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9239632E28FE32AC001631C5 /* OtherSideOfTheMoon.mp3 */; };
+		9275123528FDD061000B71F1 /* TalesOfOld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9275123428FDD061000B71F1 /* TalesOfOld.mp3 */; };
+		92AA41F928FA128500D1DC09 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA41F828FA128500D1DC09 /* Audio.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E5202B128FDDF350028819D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		0E5202B328FDEBEC0028819D /* GameWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWorld.swift; sourceTree = "<group>"; };
+		0E9B249428F8992F0042DEA2 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		30C5D09B28FB068400C4E345 /* DeathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathVC.swift; sourceTree = "<group>"; };
+		8B25468E28F66553002D8F6D /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		8B25469028F666A3002D8F6D /* LeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardVC.swift; sourceTree = "<group>"; };
+		8BA6D44B28F47CF60033E6DA /* PlayGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameVC.swift; sourceTree = "<group>"; };
+		8BA6D44F28F5BCFB0033E6DA /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		8BC2157128F1D7E100DE67FB /* DungeonRumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonRumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC2157428F1D7E100DE67FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BC2157628F1D7E100DE67FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BC2157828F1D7E100DE67FB /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		8BC2157B28F1D7E100DE67FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BC2157E28F1D7E100DE67FB /* DungeonRumble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DungeonRumble.xcdatamodel; sourceTree = "<group>"; };
+		8BC2158028F1D7E300DE67FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BC2158328F1D7E300DE67FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BC2158528F1D7E300DE67FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC2159F28F1F78D00DE67FB /* purple-pixel-dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple-pixel-dragon.png"; sourceTree = "<group>"; };
+		8BC215A228F200EA00DE67FB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8BC215A428F2017F00DE67FB /* SignupChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupChangePasswordVC.swift; sourceTree = "<group>"; };
+		920C3D5B28FF83670066FE75 /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
+		9239632C28FE30CA001631C5 /* Birdsong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Birdsong.mp3; sourceTree = "<group>"; };
+		9239632E28FE32AC001631C5 /* OtherSideOfTheMoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OtherSideOfTheMoon.mp3; sourceTree = "<group>"; };
+		9275123428FDD061000B71F1 /* TalesOfOld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TalesOfOld.mp3; sourceTree = "<group>"; };
+		92AA41F828FA128500D1DC09 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BC2156E28F1D7E100DE67FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BC2156828F1D7E100DE67FB = {
+			isa = PBXGroup;
+			children = (
+				8BC2157328F1D7E100DE67FB /* DungeonRumble */,
+				8BC2157228F1D7E100DE67FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC2157228F1D7E100DE67FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC2157128F1D7E100DE67FB /* DungeonRumble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC2157328F1D7E100DE67FB /* DungeonRumble */ = {
+			isa = PBXGroup;
+			children = (
+				8BC215A128F1F79A00DE67FB /* Resources */,
+				8BC2157428F1D7E100DE67FB /* AppDelegate.swift */,
+				8BC2157628F1D7E100DE67FB /* SceneDelegate.swift */,
+				8BC2157828F1D7E100DE67FB /* AuthenticationVC.swift */,
+				8BC2157A28F1D7E100DE67FB /* Main.storyboard */,
+				30C5D09B28FB068400C4E345 /* DeathVC.swift */,
+				0E9B249428F8992F0042DEA2 /* GameVC.swift */,
+				0E5202B328FDEBEC0028819D /* GameWorld.swift */,
+				0E5202B128FDDF350028819D /* Entity.swift */,
+				8B25469028F666A3002D8F6D /* LeaderboardVC.swift */,
+				8B25468E28F66553002D8F6D /* SettingsVC.swift */,
+				8BA6D44F28F5BCFB0033E6DA /* BorderView.swift */,
+				8BA6D44B28F47CF60033E6DA /* PlayGameVC.swift */,
+				92AA41F828FA128500D1DC09 /* Audio.swift */,
+				8BC215A428F2017F00DE67FB /* SignupChangePasswordVC.swift */,
+				8BC215A228F200EA00DE67FB /* LoginVC.swift */,
+				8BC2158028F1D7E300DE67FB /* Assets.xcassets */,
+				8BC2158228F1D7E300DE67FB /* LaunchScreen.storyboard */,
+				8BC2158528F1D7E300DE67FB /* Info.plist */,
+				8BC2157D28F1D7E100DE67FB /* DungeonRumble.xcdatamodeld */,
+			);
+			path = DungeonRumble;
+			sourceTree = "<group>";
+		};
+		8BC215A128F1F79A00DE67FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9239632C28FE30CA001631C5 /* Birdsong.mp3 */,
+				9275123428FDD061000B71F1 /* TalesOfOld.mp3 */,
+				9239632E28FE32AC001631C5 /* OtherSideOfTheMoon.mp3 */,
+				8BC2159F28F1F78D00DE67FB /* purple-pixel-dragon.png */,
+				920C3D5B28FF83670066FE75 /* VT323-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BC2157028F1D7E100DE67FB /* DungeonRumble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC2158828F1D7E300DE67FB /* Build configuration list for PBXNativeTarget "DungeonRumble" */;
+			buildPhases = (
+				8BC2156D28F1D7E100DE67FB /* Sources */,
+				8BC2156E28F1D7E100DE67FB /* Frameworks */,
+				8BC2156F28F1D7E100DE67FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DungeonRumble;
+			productName = DungeonRumble;
+			productReference = 8BC2157128F1D7E100DE67FB /* DungeonRumble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC2156928F1D7E100DE67FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8BC2157028F1D7E100DE67FB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BC2156C28F1D7E100DE67FB /* Build configuration list for PBXProject "DungeonRumble" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BC2156828F1D7E100DE67FB;
+			productRefGroup = 8BC2157228F1D7E100DE67FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC2157028F1D7E100DE67FB /* DungeonRumble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BC2156F28F1D7E100DE67FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC2158428F1D7E300DE67FB /* LaunchScreen.storyboard in Resources */,
+				8BC2158128F1D7E300DE67FB /* Assets.xcassets in Resources */,
+				9239632D28FE30CA001631C5 /* Birdsong.mp3 in Resources */,
+				8BC2157C28F1D7E100DE67FB /* Main.storyboard in Resources */,
+				9239632F28FE32AC001631C5 /* OtherSideOfTheMoon.mp3 in Resources */,
+				9275123528FDD061000B71F1 /* TalesOfOld.mp3 in Resources */,
+				920C3D5C28FF83670066FE75 /* VT323-Regular.ttf in Resources */,
+				8BC215A028F1F78D00DE67FB /* purple-pixel-dragon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC2156D28F1D7E100DE67FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9B249528F8992F0042DEA2 /* GameVC.swift in Sources */,
+				8B25468F28F66553002D8F6D /* SettingsVC.swift in Sources */,
+				8BC2157928F1D7E100DE67FB /* AuthenticationVC.swift in Sources */,
+				92AA41F928FA128500D1DC09 /* Audio.swift in Sources */,
+				8BC2157F28F1D7E100DE67FB /* DungeonRumble.xcdatamodeld in Sources */,
+				8BC2157528F1D7E100DE67FB /* AppDelegate.swift in Sources */,
+				8B25469128F666A3002D8F6D /* LeaderboardVC.swift in Sources */,
+				8BC2157728F1D7E100DE67FB /* SceneDelegate.swift in Sources */,
+				8BA6D45028F5BCFB0033E6DA /* BorderView.swift in Sources */,
+				0E5202B428FDEBEC0028819D /* GameWorld.swift in Sources */,
+				0E5202B228FDDF350028819D /* Entity.swift in Sources */,
+				8BA6D44C28F47CF60033E6DA /* PlayGameVC.swift in Sources */,
+				8BC215A328F200EA00DE67FB /* LoginVC.swift in Sources */,
+				8BC215A528F2017F00DE67FB /* SignupChangePasswordVC.swift in Sources */,
+				30C5D09C28FB068400C4E345 /* DeathVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BC2157A28F1D7E100DE67FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BC2157B28F1D7E100DE67FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BC2158228F1D7E300DE67FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BC2158328F1D7E300DE67FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BC2158628F1D7E300DE67FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BC2158728F1D7E300DE67FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BC2158928F1D7E300DE67FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DungeonRumble/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utcs.DungeonRumble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BC2158A28F1D7E300DE67FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DungeonRumble/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = utcs.DungeonRumble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC2156C28F1D7E100DE67FB /* Build configuration list for PBXProject "DungeonRumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC2158628F1D7E300DE67FB /* Debug */,
+				8BC2158728F1D7E300DE67FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC2158828F1D7E300DE67FB /* Build configuration list for PBXNativeTarget "DungeonRumble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC2158928F1D7E300DE67FB /* Debug */,
+				8BC2158A28F1D7E300DE67FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BC2157D28F1D7E100DE67FB /* DungeonRumble.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BC2157E28F1D7E100DE67FB /* DungeonRumble.xcdatamodel */,
+			);
+			currentVersion = 8BC2157E28F1D7E100DE67FB /* DungeonRumble.xcdatamodel */;
+			path = DungeonRumble.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8BC2156928F1D7E100DE67FB /* Project object */;
+}
